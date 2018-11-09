@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\mail.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\dsn.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\imap.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\mailapi.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\pop3.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\smtp.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\jackson-annotations.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\jackson-core.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\jackson-databind.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\jackson-dataformat-xml.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\jackson-jaxrs-base.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\jackson-jaxrs-json-provider.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\jackson-module-jaxb-annotations.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\javax.annotation-api.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\javax.ws.rs-api-2.0.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\cxf-core.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\cxf-rt-frontend-jaxrs.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\cxf-rt-rs-client.jar"/>
+	<classpathentry kind="lib" path="C:\Users\sharman\MailSenderJars\cxf-rt-transports-http.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,66 @@
+<?xml version="1.0" ?> 
+<project default="run" name="buildStreet" basedir=".">
+<property file="C:\Users\prathi\Desktop\MailSender\src\com\hemanthworks\mailsender\JobOwners.properties" />
+<path id="classpath">
+    <pathelement location="C:/Users/prathi/Desktop/javamail1_4_5/javamail-1.4.5/mail.jar" />
+    <pathelement location="C:/Users/prathi/Desktop/javamail1_4_5/javamail-1.4.5/lib/dsn.jar" />
+    <pathelement location="C:/Users/prathi/Desktop/javamail1_4_5/javamail-1.4.5/lib/imap.jar" />
+    <pathelement location="C:/Users/prathi/Desktop/javamail1_4_5/javamail-1.4.5/lib/mailapi.jar" />
+    <pathelement location="C:/Users/prathi/Desktop/javamail1_4_5/javamail-1.4.5/lib/pop3.jar" />
+    <pathelement location="C:/Users/prathi/Desktop/javamail1_4_5/javamail-1.4.5/lib/smtp.jar" /><pathelement location="C:/Users/prathi/Desktop/javamail1_4_5/javamail-1.4.5/mail.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/jackson-annotations.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/jackson-core.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/jackson-databind.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/jackson-dataformat-xml.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/jackson-jaxrs-base.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/jackson-jaxrs-json-provider.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/jackson-module-jaxb-annotations.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/javax.annotation-api.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/javax.ws.rs-api-2.0.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/cxf-core.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/cxf-rt-frontend-jaxrs.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/cxf-rt-rs-client.jar" />
+    <pathelement location="C:/sources/soa-wip/redist/cxf-rt-transports-http.jar" />
+
+</path>
+<target name="run" depends="compile">
+<jar destfile="zip\app.jar" basedir="C:\Users\prathi\Desktop\MailSender\files">
+<fileset dir="files"/>
+  <zipfileset includes="**/*.class,**/*.properties" dir="."/>
+  <manifest>
+    <attribute name="Main-Class" value="com.hemanthworks.mailsender.Sender"/>
+  </manifest>
+  </jar>
+<!--<java classname="com.hemanthworks.mailsender.Sender" classpath="files" /> -->
+</target>
+
+<target name="compile">
+<javac classpathref="classpath" includeantruntime="false" srcdir=".\src" destdir="files" />
+</target>
+
+</project>
+<!-->
+
+
+<jar destfile="files/app.jar" basedir="C:\Users\prathi\Desktop\MailSender\files\com\hemanthworks"/>
+
+
+<property file="C:\Users\prathi\Desktop\MailSender\src\com\hemanthworks\mailsender\JobOwners.properties" />
+<target name="init">
+    <mkdir dir="build/classes" />
+    <mkdir dir="dist" />
+</target>
+
+<target name="compile" depends="init">
+    <javac srcdir="src" destdir="build/classes" />
+</target>
+
+<target name="compress" depends="compile">
+        <jar destfile="HelloWorld.jar" basedir="build/classes" />
+</target>
+
+<target name="execute" depends="compile">
+    <java classname="com.hemanthworks.mailsender.Sender" classpath="build/classes" />
+</target>
+
+</project> -->  
